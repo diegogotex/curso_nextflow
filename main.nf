@@ -29,7 +29,8 @@ process CONVERTTOUPPER {
 
 workflow {
     letters_ch = SPLITLETTERS(greeting_ch)
-    results_ch = CONVERTTOUPPER(letters_ch.flatten())
+    //results_ch = CONVERTTOUPPER(letters_ch.flatten())
+    results_ch = CONVERTTOUPPER(letters_ch)
     results_ch.view{ it }
 }
 
