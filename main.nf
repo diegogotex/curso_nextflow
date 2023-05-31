@@ -21,7 +21,8 @@ log.info """\
     .stripIndent()
 
 /*
-*   criando o index binario do salmon
+*   gerando um canal para criar
+*   o index binario do salmon
 *   a partir de um transcriptoma de referencia
 */
 
@@ -38,6 +39,24 @@ process INDEX {
     """
 }
 
+process QUANTIFICATION {
+    tag "Salmon on $sample_id"
+    publishDir params.outdir, mode:'copy'
+
+    input:
+    path salmon_index
+    tuple val(sample_id), path(reads)
+
+    output:
+    path "$sample_id"
+
+    script: 
+    """
+    salmon quant --threads $task.cpus --libType=U -i $salmon_index -1 ${reads[0]} -2 ${reads[1]} -o $sample_id
+    """
+}
+
 workflow {
     index_ch = INDEX(params.transcriptome_file)
+    quant_ch = QUANTIFICATION(index_ch, reads_pairs_ch)
 }

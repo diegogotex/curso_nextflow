@@ -1,0 +1,9 @@
+2023-05-31 10:42:35	-	trusting_lamport	-	aa44e550ecfae3b67227f27ee35c7f14f155259c	0020f6b2-0a3b-489e-96e9-21b06c7a717e	nextflow run diegogotex/curso_nextflow -r main -with-tower
+2023-05-31 10:42:57	1.2s	trusting_kirch	OK	aa44e550ecfae3b67227f27ee35c7f14f155259c	bf2a3354-e486-4d61-90cd-ecee48a03765	nextflow run diegogotex/curso_nextflow -r main
+2023-05-31 10:53:14	1.3s	cranky_northcutt	OK	aa44e550ecfae3b67227f27ee35c7f14f155259c	131e2c61-a2d6-4923-a88d-3f516a26a3dc	nextflow run diegogotex/curso_nextflow -r main
+2023-05-31 10:54:29	-	marvelous_shockley	-	aa10ae8c961a11ac413a47dc13f9390b	ee45772d-12a7-4b3d-ae97-b9756392bc33	nextflow run main.nf
+2023-05-31 10:56:44	-	condescending_allen	-	ca0d818978863081662d2cd0419b0868	fd0627ff-bcdb-47c6-a6a8-b9d03a6ee2ce	nextflow run main.nf
+2023-05-31 10:57:23	998ms	reverent_murdock	ERR	7348a389c1488b943ca4310a8517b6e0	4405b414-a180-4e9e-9d04-4b83e6f96737	nextflow run main.nf
+2023-05-31 10:58:47	1m 2s	hungry_feynman	OK	7348a389c1488b943ca4310a8517b6e0	9d990f3f-60bc-448c-9cf8-e7c1cd6b9c76	nextflow run main.nf
+2023-05-31 11:10:41	3.1s	tender_bardeen	OK	aa44e550ecfae3b67227f27ee35c7f14f155259c	2c2ddf7b-9625-4404-80f7-9816bb5eaeb9	nextflow run diegogotex/curso_nextflow -r main
+2023-05-31 11:11:33	3.3s	desperate_mcnulty	OK	aa44e550ecfae3b67227f27ee35c7f14f155259c	5574e55e-0bcc-4d0c-9e33-8b35f3679991	nextflow run diegogotex/curso_nextflow/main.nf -r main

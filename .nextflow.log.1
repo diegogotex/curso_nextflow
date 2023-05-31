@@ -1,0 +1,75 @@
+mai-31 11:10:40.031 [main] DEBUG nextflow.cli.Launcher - $> nextflow run diegogotex/curso_nextflow -r main
+mai-31 11:10:40.083 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.04.1
+mai-31 11:10:40.099 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/diego/.nextflow/plugins; core-plugins: nf-amazon@1.16.2,nf-azure@1.0.1,nf-codecommit@0.1.4,nf-console@1.0.5,nf-ga4gh@1.0.5,nf-google@1.7.3,nf-tower@1.5.12,nf-wave@0.8.2
+mai-31 11:10:40.107 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+mai-31 11:10:40.108 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+mai-31 11:10:40.111 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+mai-31 11:10:40.118 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+mai-31 11:10:40.129 [main] DEBUG nextflow.scm.ProviderConfig - Using SCM config path: /home/diego/.nextflow/scm
+mai-31 11:10:40.138 [main] DEBUG nextflow.scm.AssetManager - Project manifest does not exist: /home/diego/.nextflow/assets/diegogotex/curso_nextflow/nextflow.config (No such file or directory)
+mai-31 11:10:40.142 [main] DEBUG nextflow.scm.AssetManager - Git config: /home/diego/.nextflow/assets/diegogotex/curso_nextflow/.git/config; branch: master; remote: origin; url: https://github.com/diegogotex/curso_nextflow.git
+mai-31 11:10:40.167 [main] DEBUG nextflow.scm.RepositoryFactory - Found Git repository result: [RepositoryFactory]
+mai-31 11:10:40.173 [main] DEBUG nextflow.scm.AssetManager - Git config: /home/diego/.nextflow/assets/diegogotex/curso_nextflow/.git/config; branch: master; remote: origin; url: https://github.com/diegogotex/curso_nextflow.git
+mai-31 11:10:40.956 [main] INFO  nextflow.scm.AssetManager - NOTE: Your local project version looks outdated - a different revision is available in the remote repository [c030e765a3]
+mai-31 11:10:40.966 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /home/diego/Dropbox/curso_nextflow/nextflow.config
+mai-31 11:10:40.967 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/diego/Dropbox/curso_nextflow/nextflow.config
+mai-31 11:10:40.985 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+mai-31 11:10:41.307 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
+mai-31 11:10:41.308 [main] INFO  nextflow.cli.CmdRun - Launching `https://github.com/diegogotex/curso_nextflow` [tender_bardeen] DSL2 - revision: aa44e550ec [main]
+mai-31 11:10:41.309 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+mai-31 11:10:41.309 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+mai-31 11:10:41.311 [main] DEBUG nextflow.secret.LocalSecretsProvider - Secrets store: /home/diego/.nextflow/secrets/store.json
+mai-31 11:10:41.314 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@5a97b17c] - activable => nextflow.secret.LocalSecretsProvider@5a97b17c
+mai-31 11:10:41.353 [main] DEBUG nextflow.Session - Session UUID: 2c2ddf7b-9625-4404-80f7-9816bb5eaeb9
+mai-31 11:10:41.353 [main] DEBUG nextflow.Session - Run name: tender_bardeen
+mai-31 11:10:41.354 [main] DEBUG nextflow.Session - Executor pool size: 12
+mai-31 11:10:41.362 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=36; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+mai-31 11:10:41.378 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 23.04.1 build 5866
+  Created: 15-04-2023 06:51 UTC (03:51 BRST)
+  System: Linux 5.15.0-72-generic
+  Runtime: Groovy 3.0.16 on OpenJDK 64-Bit Server VM 11.0.19+7-post-Ubuntu-0ubuntu122.04.1
+  Encoding: UTF-8 (UTF-8)
+  Process: 75735@diego [127.0.1.1]
+  CPUs: 12 - Mem: 14.9 GB (243.4 MB) - Swap: 2 GB (1.9 GB)
+mai-31 11:10:41.392 [main] DEBUG nextflow.Session - Work-dir: /home/diego/Dropbox/curso_nextflow/work [ext2/ext3]
+mai-31 11:10:41.392 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/diego/.nextflow/assets/diegogotex/curso_nextflow/bin
+mai-31 11:10:41.399 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+mai-31 11:10:41.406 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+mai-31 11:10:41.426 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+mai-31 11:10:41.433 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 13; maxThreads: 1000
+mai-31 11:10:41.479 [main] DEBUG nextflow.Session - Session start
+mai-31 11:10:41.622 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+mai-31 11:10:41.682 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+mai-31 11:10:41.683 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+mai-31 11:10:41.687 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+mai-31 11:10:41.691 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=12; memory=14.9 GB; capacity=12; pollInterval=100ms; dumpInterval=5m
+mai-31 11:10:41.751 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+mai-31 11:10:41.751 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+mai-31 11:10:41.761 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: SPLITLETTERS, CONVERTTOUPPER
+mai-31 11:10:41.761 [main] DEBUG nextflow.Session - Igniting dataflow network (3)
+mai-31 11:10:41.762 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SPLITLETTERS
+mai-31 11:10:41.762 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > CONVERTTOUPPER
+mai-31 11:10:41.762 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+mai-31 11:10:41.762 [main] DEBUG nextflow.Session - Session await
+mai-31 11:10:41.846 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+mai-31 11:10:41.848 [Task submitter] INFO  nextflow.Session - [6a/781daf] Submitted process > SPLITLETTERS (1)
+mai-31 11:10:42.461 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: SPLITLETTERS (1); status: COMPLETED; exit: 0; error: -; workDir: /home/diego/Dropbox/curso_nextflow/work/6a/781daf2c1cc131c182710cfc8b02be]
+mai-31 11:10:42.491 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+mai-31 11:10:42.491 [Task submitter] INFO  nextflow.Session - [9f/ea86f3] Submitted process > CONVERTTOUPPER (2)
+mai-31 11:10:42.497 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+mai-31 11:10:42.498 [Task submitter] INFO  nextflow.Session - [44/ab3aee] Submitted process > CONVERTTOUPPER (3)
+mai-31 11:10:42.503 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+mai-31 11:10:42.504 [Task submitter] INFO  nextflow.Session - [de/ed1b49] Submitted process > CONVERTTOUPPER (1)
+mai-31 11:10:42.509 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+mai-31 11:10:42.510 [Task submitter] INFO  nextflow.Session - [cf/096958] Submitted process > CONVERTTOUPPER (4)
+mai-31 11:10:43.409 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: CONVERTTOUPPER (1); status: COMPLETED; exit: 0; error: -; workDir: /home/diego/Dropbox/curso_nextflow/work/de/ed1b49f9483e59b61969d88bb7e78a]
+mai-31 11:10:43.802 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: CONVERTTOUPPER (2); status: COMPLETED; exit: 0; error: -; workDir: /home/diego/Dropbox/curso_nextflow/work/9f/ea86f3f9394951150ada52c7b73055]
+mai-31 11:10:43.846 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: CONVERTTOUPPER (3); status: COMPLETED; exit: 0; error: -; workDir: /home/diego/Dropbox/curso_nextflow/work/44/ab3aee7a3ceeba0f3dadac4ada7580]
+mai-31 11:10:43.944 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 5; name: CONVERTTOUPPER (4); status: COMPLETED; exit: 0; error: -; workDir: /home/diego/Dropbox/curso_nextflow/work/cf/096958a286707c07ba09a4ffc04696]
+mai-31 11:10:43.945 [main] DEBUG nextflow.Session - Session await > all processes finished
+mai-31 11:10:43.946 [main] DEBUG nextflow.Session - Session await > all barriers passed
+mai-31 11:10:43.951 [main] DEBUG nextflow.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=5; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=5.3s; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=4; peakCpus=4; peakMemory=0; ]
+mai-31 11:10:44.109 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+mai-31 11:10:44.118 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
+mai-31 11:10:44.118 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
