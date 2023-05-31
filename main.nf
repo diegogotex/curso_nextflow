@@ -11,15 +11,14 @@ params.multiqc = "$projectDir/multiqc"
 params.outdir = "results"
 
 //configurano o log a ser printado durante a execução
-log.info
-"""\
-R N A S E Q - N F  P I P E L I N E
-==================================
-transcriptome: ${params.transcriptome_file}
-reads: ${params.reads}
-outdir: ${params.outdir}
-"""
-.stripIdent()
+log.info """\
+    R N A S E Q - N F  P I P E L I N E
+    ==================================
+    transcriptome: ${params.transcriptome_file}
+    reads: ${params.reads}
+    outdir: ${params.outdir}
+    """
+    .stripIndent()
 
 /*
 *   criando o index binario do salmon
