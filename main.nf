@@ -5,7 +5,7 @@
  * parametros de input do pipeline
  */
 
-params.reads = "$projectDir/data/ggal/gut_{1,2}.fq"
+params.reads = "$projectDir/data/ggal/*_{1,2}.fq"
 params.transcriptome_file = "$projectDir/data/ggal/transcriptome.fa"
 params.multiqc = "$projectDir/multiqc"
 params.outdir = "results"
@@ -56,11 +56,48 @@ process QUANTIFICATION {
     """
 }
 
+process FASTQC {
+    tag "FASTQC on $sample_id"
+
+    input:
+    tuple val(sample_id), path(reads)
+
+    output:
+    path "fastqc_${sample_id}_logs"
+
+    script:
+    """
+    mkdir fastqc_${sample_id}_logs
+
+    fastqc -o fastqc_${sample_id}_logs -f fastq -q ${reads}
+    """
+}
+
+process MULTIQC {
+    publishDir params.outdir, mode:'copy'
+
+    input:
+    path '*'
+
+    output:
+    path 'multiqc_report.html'
+
+    script:
+    """
+    multiqc .
+    """
+}
+
+
 workflow {
+
     Channel
         .fromFilePairs(params.reads, checkIfExists: true)
         .set { read_pairs_ch } 
 
     index_ch = INDEX(params.transcriptome_file)
     quant_ch = QUANTIFICATION(index_ch, read_pairs_ch)
+    fastqc_ch = FASTQC(read_pairs_ch)
+    MULTIQC(quant_ch.mix(fastqc_ch).collect())
+
 }

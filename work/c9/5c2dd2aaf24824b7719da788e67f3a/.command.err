@@ -1,0 +1,101 @@
+Version Info: ### PLEASE UPGRADE SALMON ###
+### A newer version of salmon with important bug fixes and improvements is available. ####
+###
+The newest version, available at https://github.com/COMBINE-lab/salmon/releases
+contains new features, improvements, and bug fixes; please upgrade at your
+earliest convenience.
+###
+Sign up for the salmon mailing list to hear about new versions, features and updates at:
+https://oceangenomics.com/subscribe
+###
+### salmon (mapping-based) v1.0.0
+### [ program ] => salmon 
+### [ command ] => quant 
+### [ threads ] => { 1 }
+### [ libType ] => { U }
+### [ index ] => { salmon_index }
+### [ mates1 ] => { liver_1.fq }
+### [ mates2 ] => { liver_2.fq }
+### [ output ] => { liver }
+Logs will be written to liver/logs
+[2023-06-01 12:48:55.819] [jointLog] [info] Fragment incompatibility prior below threshold.  Incompatible fragments will be ignored.
+[2023-06-01 12:48:55.819] [jointLog] [info] Usage of --validateMappings implies use of minScoreFraction. Since not explicitly specified, it is being set to 0.65
+[2023-06-01 12:48:55.819] [jointLog] [info] Usage of --validateMappings implies a default consensus slack of 0.2. Setting consensusSlack to 0.35.
+[2023-06-01 12:48:55.819] [jointLog] [info] parsing read library format
+[2023-06-01 12:48:55.819] [jointLog] [info] There is 1 library.
+-----------------------------------------
+| Loading contig table | Time = 197.5 us
+-----------------------------------------
+size = 14
+-----------------------------------------
+| Loading contig offsets | Time = 471.91 us
+-----------------------------------------
+-----------------------------------------
+| Loading reference lengths | Time = 240.75 us
+-----------------------------------------
+-----------------------------------------
+| Loading mphf table | Time = 1.0986 ms
+-----------------------------------------
+size = 171333
+Number of ones: 13
+Number of ones per inventory item: 512
+Inventory entries filled: 1
+-----------------------------------------
+| Loading contig boundaries | Time = 1.3533 ms
+-----------------------------------------
+size = 171333
+-----------------------------------------
+| Loading sequence | Time = 2.2937 ms
+-----------------------------------------
+size = 170943
+-----------------------------------------
+| Loading positions | Time = 1.994 ms
+-----------------------------------------
+size = 171001
+-----------------------------------------
+| Loading reference sequence | Time = 943.16 us
+-----------------------------------------
+-----------------------------------------
+| Loading reference accumulative lengths | Time = 290.97 us
+-----------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+[2023-06-01 12:48:56.107] [jointLog] [info] Loading pufferfish index
+[2023-06-01 12:48:56.107] [jointLog] [info] Loading dense pufferfish index.
+[2023-06-01 12:48:56.119] [jointLog] [info] done
+[2023-06-01 12:48:56.119] [jointLog] [info] Index contained 1 targets
+[2023-06-01 12:48:56.119] [jointLog] [info] Number of decoys : 0
+[2023-06-01 12:48:56.119] [jointLog] [info] First decoy index : 18446744073709551615 
+[2023-06-01 12:48:56.413] [jointLog] [info] Computed 1 rich equivalence classes for further processing
+[2023-06-01 12:48:56.413] [jointLog] [info] Counted 2058 total reads in the equivalence classes 
+[2023-06-01 12:48:56.420] [jointLog] [info] Number of mappings discarded because of alignment score : 1540
+[2023-06-01 12:48:56.420] [jointLog] [info] Number of fragments entirely discarded because of alignment score : 874
+[2023-06-01 12:48:56.420] [jointLog] [info] Number of fragments discarded because they are best-mapped to decoys : 0
+[2023-06-01 12:48:56.420] [jointLog] [info] Number of fragments discarded because they have only dovetail (discordant) mappings to valid targets : 1037
+[2023-06-01 12:48:56.420] [jointLog] [warning] Only 2058 fragments were mapped, but the number of burn-in fragments was set to 5000000.
+The effective lengths have been computed using the observed mappings.
+
+[2023-06-01 12:48:56.420] [jointLog] [info] Mapping rate = 70.0715%
+
+[2023-06-01 12:48:56.420] [jointLog] [info] finished quantifyLibrary()
+[2023-06-01 12:48:56.423] [jointLog] [info] Starting optimizer
+[2023-06-01 12:48:56.425] [jointLog] [info] Marked 0 weighted equivalence classes as degenerate
+[2023-06-01 12:48:56.425] [jointLog] [info] iteration = 0 | max rel diff. = 2.20966e-16
+[2023-06-01 12:48:56.425] [jointLog] [info] iteration = 100 | max rel diff. = 0
+[2023-06-01 12:48:56.425] [jointLog] [info] Finished optimizer
+[2023-06-01 12:48:56.425] [jointLog] [info] writing output 
+
+[2023-06-01 12:48:56.427] [jointLog] [warning] NOTE: Read Lib [[ liver_1.fq, liver_2.fq]] :
+
+Detected a *potential* strand bias > 1% in an unstranded protocol check the file: liver/lib_format_counts.json for details
+

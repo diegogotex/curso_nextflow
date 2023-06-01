@@ -1,0 +1,10 @@
+Module	Section	Sample Name	Source
+FastQC	all_sections	liver_2	/home/diego/Dropbox/curso_nextflow/work/19/87c60864908f9353698d0a3c685d2c/fastqc_liver_logs/liver_2_fastqc.zip
+FastQC	all_sections	lung_2	/home/diego/Dropbox/curso_nextflow/work/19/87c60864908f9353698d0a3c685d2c/fastqc_lung_logs/lung_2_fastqc.zip
+FastQC	all_sections	lung_1	/home/diego/Dropbox/curso_nextflow/work/19/87c60864908f9353698d0a3c685d2c/fastqc_lung_logs/lung_1_fastqc.zip
+FastQC	all_sections	liver_1	/home/diego/Dropbox/curso_nextflow/work/19/87c60864908f9353698d0a3c685d2c/fastqc_liver_logs/liver_1_fastqc.zip
+FastQC	all_sections	gut_1	/home/diego/Dropbox/curso_nextflow/work/19/87c60864908f9353698d0a3c685d2c/fastqc_gut_logs/gut_1_fastqc.zip
+FastQC	all_sections	gut_2	/home/diego/Dropbox/curso_nextflow/work/19/87c60864908f9353698d0a3c685d2c/fastqc_gut_logs/gut_2_fastqc.zip
+Salmon	all_sections	lung	/home/diego/Dropbox/curso_nextflow/work/19/87c60864908f9353698d0a3c685d2c/lung/libParams/flenDist.txt
+Salmon	all_sections	liver	/home/diego/Dropbox/curso_nextflow/work/19/87c60864908f9353698d0a3c685d2c/liver/libParams/flenDist.txt
+Salmon	all_sections	gut	/home/diego/Dropbox/curso_nextflow/work/19/87c60864908f9353698d0a3c685d2c/gut/libParams/flenDist.txt

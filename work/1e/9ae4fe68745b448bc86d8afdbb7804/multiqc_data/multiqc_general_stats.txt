@@ -1,0 +1,4 @@
+Sample	Salmon_mqc-generalstats-percent_mapped	Salmon_mqc-generalstats-num_mapped	FastQC_mqc-generalstats-percent_fails	FastQC_mqc-generalstats-avg_sequence_length	FastQC_mqc-generalstats-percent_duplicates	FastQC_mqc-generalstats-total_sequences	FastQC_mqc-generalstats-percent_gc
+gut	70.0715015322	2058					
+gut_1			18.1818181818	103.979570991	14.3343547838	2937.0	45.0
+gut_2			27.2727272727	105.0	14.1641130405	2937.0	45.0
