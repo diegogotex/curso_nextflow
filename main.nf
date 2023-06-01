@@ -57,6 +57,10 @@ process QUANTIFICATION {
 }
 
 workflow {
+    Channel
+        .fromFilePairs(params.reads, checkIfExists: true)
+        .set { read_pairs_ch } 
+
     index_ch = INDEX(params.transcriptome_file)
-    quant_ch = QUANTIFICATION(index_ch, reads_pairs_ch)
+    quant_ch = QUANTIFICATION(index_ch, read_pairs_ch)
 }
