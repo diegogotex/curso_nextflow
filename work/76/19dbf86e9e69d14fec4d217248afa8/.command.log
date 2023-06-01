@@ -1,0 +1,92 @@
+Version Info: This is the most recent version of salmon.
+### salmon (selective-alignment-based) v1.10.0
+### [ program ] => salmon 
+### [ command ] => quant 
+### [ threads ] => { 1 }
+### [ libType ] => { U }
+### [ index ] => { salmon_index }
+### [ mates1 ] => { gut_1.fq }
+### [ mates2 ] => { gut_2.fq }
+### [ output ] => { gut }
+Logs will be written to gut/logs
+-----------------------------------------
+| Loading contig table | Time = 34.97 us
+-----------------------------------------
+size = 14
+-----------------------------------------
+| Loading contig offsets | Time = 153.29 us
+-----------------------------------------
+-----------------------------------------
+| Loading reference lengths | Time = 9.728 us
+-----------------------------------------
+-----------------------------------------
+| Loading mphf table | Time = 202.52 us
+-----------------------------------------
+size = 171333
+Number of ones: 13
+Number of ones per inventory item: 512
+Inventory entries filled: 1
+-----------------------------------------
+| Loading contig boundaries | Time = 781.24 us
+-----------------------------------------
+size = 171333
+-----------------------------------------
+| Loading sequence | Time = 231.4 us
+-----------------------------------------
+size = 170943
+-----------------------------------------
+| Loading positions | Time = 580.79 us
+-----------------------------------------
+size = 171001
+-----------------------------------------
+| Loading reference sequence | Time = 164.18 us
+-----------------------------------------
+-----------------------------------------
+| Loading reference accumulative lengths | Time = 8.647 us
+-----------------------------------------
+[2023-06-01 17:11:14.854] [jointLog] [info] setting maxHashResizeThreads to 1
+[2023-06-01 17:11:14.854] [jointLog] [info] Fragment incompatibility prior below threshold.  Incompatible fragments will be ignored.
+[2023-06-01 17:11:14.854] [jointLog] [info] Usage of --validateMappings implies use of minScoreFraction. Since not explicitly specified, it is being set to 0.65
+[2023-06-01 17:11:14.854] [jointLog] [info] Setting consensusSlack to selective-alignment default of 0.35.
+[2023-06-01 17:11:14.854] [jointLog] [info] parsing read library format
+[2023-06-01 17:11:14.854] [jointLog] [info] There is 1 library.
+[2023-06-01 17:11:14.854] [jointLog] [info] Loading pufferfish index
+[2023-06-01 17:11:14.854] [jointLog] [info] Loading dense pufferfish index.
+[2023-06-01 17:11:14.857] [jointLog] [info] done
+
+
+
+
+
+
+
+
+
+
+
+
+[2023-06-01 17:11:15.102] [jointLog] [info] Index contained 1 targets
+[2023-06-01 17:11:15.102] [jointLog] [info] Number of decoys : 0
+[2023-06-01 17:11:15.378] [jointLog] [info] Computed 1 rich equivalence classes for further processing
+[2023-06-01 17:11:15.378] [jointLog] [info] Counted 1984 total reads in the equivalence classes 
+[2023-06-01 17:11:15.380] [jointLog] [info] Number of mappings discarded because of alignment score : 1505
+[2023-06-01 17:11:15.380] [jointLog] [info] Number of fragments entirely discarded because of alignment score : 948
+[2023-06-01 17:11:15.380] [jointLog] [info] Number of fragments discarded because they are best-mapped to decoys : 0
+[2023-06-01 17:11:15.380] [jointLog] [info] Number of fragments discarded because they have only dovetail (discordant) mappings to valid targets : 1044
+[2023-06-01 17:11:15.380] [jointLog] [warning] Only 1984 fragments were mapped, but the number of burn-in fragments was set to 5000000.
+The effective lengths have been computed using the observed mappings.
+
+[2023-06-01 17:11:15.380] [jointLog] [info] Mapping rate = 67.5519%
+
+[2023-06-01 17:11:15.380] [jointLog] [info] finished quantifyLibrary()
+[2023-06-01 17:11:15.380] [jointLog] [info] Starting optimizer
+[2023-06-01 17:11:15.390] [jointLog] [info] Marked 0 weighted equivalence classes as degenerate
+[2023-06-01 17:11:15.390] [jointLog] [info] iteration = 0 | max rel diff. = 3.43811e-16
+[2023-06-01 17:11:15.390] [jointLog] [info] iteration = 100 | max rel diff. = 0
+[2023-06-01 17:11:15.390] [jointLog] [info] Finished optimizer
+[2023-06-01 17:11:15.390] [jointLog] [info] writing output 
+
+[2023-06-01 17:11:15.390] [jointLog] [warning] NOTE: Read Lib [[ gut_1.fq, gut_2.fq]] :
+
+Detected a *potential* strand bias > 1% in an unstranded protocol check the file: gut/lib_format_counts.json for details
+

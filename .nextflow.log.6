@@ -1,0 +1,127 @@
+jun.-01 14:06:16.224 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf
+jun.-01 14:06:16.381 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.04.1
+jun.-01 14:06:16.433 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/diego/.nextflow/plugins; core-plugins: nf-amazon@1.16.2,nf-azure@1.0.1,nf-codecommit@0.1.4,nf-console@1.0.5,nf-ga4gh@1.0.5,nf-google@1.7.3,nf-tower@1.5.12,nf-wave@0.8.2
+jun.-01 14:06:16.457 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+jun.-01 14:06:16.458 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+jun.-01 14:06:16.466 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+jun.-01 14:06:16.487 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+jun.-01 14:06:16.532 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /home/diego/Dropbox/curso_nextflow/nextflow.config
+jun.-01 14:06:16.534 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/diego/Dropbox/curso_nextflow/nextflow.config
+jun.-01 14:06:16.586 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+jun.-01 14:06:17.575 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
+jun.-01 14:06:17.603 [main] INFO  nextflow.cli.CmdRun - Launching `main.nf` [mad_aryabhata] DSL2 - revision: 394bdcb54e
+jun.-01 14:06:17.605 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+jun.-01 14:06:17.605 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+jun.-01 14:06:17.639 [main] DEBUG nextflow.secret.LocalSecretsProvider - Secrets store: /home/diego/.nextflow/secrets/store.json
+jun.-01 14:06:17.650 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@588f63c] - activable => nextflow.secret.LocalSecretsProvider@588f63c
+jun.-01 14:06:17.755 [main] DEBUG nextflow.Session - Session UUID: 12085ab2-754c-426b-9290-edd6867dd5b1
+jun.-01 14:06:17.755 [main] DEBUG nextflow.Session - Run name: mad_aryabhata
+jun.-01 14:06:17.756 [main] DEBUG nextflow.Session - Executor pool size: 4
+jun.-01 14:06:17.780 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=12; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+jun.-01 14:06:17.820 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 23.04.1 build 5866
+  Created: 15-04-2023 06:51 UTC (03:51 BRST)
+  System: Linux 5.19.0-42-generic
+  Runtime: Groovy 3.0.16 on OpenJDK 64-Bit Server VM 19.0.2+7-Ubuntu-0ubuntu322.04
+  Encoding: UTF-8 (UTF-8)
+  Process: 128975@diego [127.0.1.1]
+  CPUs: 4 - Mem: 7.7 GB (151.7 MB) - Swap: 2 GB (1.6 GB)
+jun.-01 14:06:17.860 [main] DEBUG nextflow.Session - Work-dir: /home/diego/Dropbox/curso_nextflow/work [ext2/ext3]
+jun.-01 14:06:17.860 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/diego/Dropbox/curso_nextflow/bin
+jun.-01 14:06:17.878 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+jun.-01 14:06:17.894 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+jun.-01 14:06:17.929 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+jun.-01 14:06:17.945 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 5; maxThreads: 1000
+jun.-01 14:06:18.074 [main] DEBUG nextflow.Session - Session start
+jun.-01 14:06:19.085 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+jun.-01 14:06:19.128 [main] INFO  nextflow.Nextflow - R N A S E Q - N F  P I P E L I N E
+==================================
+transcriptome: /home/diego/Dropbox/curso_nextflow/data/ggal/transcriptome.fa
+reads: /home/diego/Dropbox/curso_nextflow/data/ggal/*_{1,2}.fq
+outdir: results
+
+jun.-01 14:06:19.383 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:INDEX|QUANTIFICATION` matches process INDEX
+jun.-01 14:06:19.401 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+jun.-01 14:06:19.401 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+jun.-01 14:06:19.413 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+jun.-01 14:06:19.425 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=4; memory=7.7 GB; capacity=4; pollInterval=100ms; dumpInterval=5m
+jun.-01 14:06:19.597 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:INDEX|QUANTIFICATION` matches process QUANTIFICATION
+jun.-01 14:06:19.604 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+jun.-01 14:06:19.605 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+jun.-01 14:06:19.618 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:FASTQC` matches process FASTQC
+jun.-01 14:06:19.622 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+jun.-01 14:06:19.623 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+jun.-01 14:06:19.658 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:MULTIQC` matches process MULTIQC
+jun.-01 14:06:19.660 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+jun.-01 14:06:19.661 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+jun.-01 14:06:19.670 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: FASTQC, QUANTIFICATION, MULTIQC, INDEX
+jun.-01 14:06:19.672 [main] DEBUG nextflow.Session - Igniting dataflow network (5)
+jun.-01 14:06:19.682 [PathVisitor-1] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: /home/diego/Dropbox/curso_nextflow/data/ggal/; pattern: *_{1,2}.fq; options: [checkIfExists:true]
+jun.-01 14:06:19.684 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > INDEX
+jun.-01 14:06:19.685 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > QUANTIFICATION
+jun.-01 14:06:19.686 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > FASTQC
+jun.-01 14:06:19.686 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > MULTIQC
+jun.-01 14:06:19.705 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+jun.-01 14:06:19.707 [main] DEBUG nextflow.Session - Session await
+jun.-01 14:06:20.027 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+jun.-01 14:06:20.036 [Task submitter] INFO  nextflow.Session - [71/96d8cb] Submitted process > INDEX
+jun.-01 14:06:20.066 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+jun.-01 14:06:20.069 [Task submitter] INFO  nextflow.Session - [8d/3e635a] Submitted process > FASTQC (FASTQC on liver)
+jun.-01 14:06:20.086 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+jun.-01 14:06:20.087 [Task submitter] INFO  nextflow.Session - [4a/e4a606] Submitted process > FASTQC (FASTQC on gut)
+jun.-01 14:06:20.118 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+jun.-01 14:06:20.127 [Task submitter] INFO  nextflow.Session - [8a/a5df55] Submitted process > FASTQC (FASTQC on lung)
+jun.-01 14:06:21.480 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: INDEX; status: COMPLETED; exit: 0; error: -; workDir: /home/diego/Dropbox/curso_nextflow/work/71/96d8cbeae58e6a21da92a402869492]
+jun.-01 14:06:21.552 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+jun.-01 14:06:21.553 [Task submitter] INFO  nextflow.Session - [f1/dce584] Submitted process > QUANTIFICATION (Salmon on gut)
+jun.-01 14:06:22.291 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: FASTQC (FASTQC on lung); status: COMPLETED; exit: 125; error: -; workDir: /home/diego/Dropbox/curso_nextflow/work/8a/a5df550fdc8f4f5db4e067a04b9bd5]
+jun.-01 14:06:22.304 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+jun.-01 14:06:22.307 [Task submitter] INFO  nextflow.Session - [3e/7f465b] Submitted process > QUANTIFICATION (Salmon on liver)
+jun.-01 14:06:22.342 [Task monitor] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=FASTQC (FASTQC on lung); work-dir=/home/diego/Dropbox/curso_nextflow/work/8a/a5df550fdc8f4f5db4e067a04b9bd5
+  error [nextflow.exception.ProcessFailedException]: Process `FASTQC (FASTQC on lung)` terminated with an error exit status (125)
+jun.-01 14:06:22.403 [Task monitor] ERROR nextflow.processor.TaskProcessor - Error executing process > 'FASTQC (FASTQC on lung)'
+
+Caused by:
+  Process `FASTQC (FASTQC on lung)` terminated with an error exit status (125)
+
+Command executed:
+
+  mkdir fastqc_lung_logs
+  
+  fastqc -o fastqc_lung_logs -f fastq -q lung_1.fq lung_2.fq
+
+Command exit status:
+  125
+
+Command output:
+  (empty)
+
+Command error:
+  Unable to find image 'quay.io/biocontainers/fastqc:latest' locally
+  docker: Error response from daemon: manifest for quay.io/biocontainers/fastqc:latest not found: manifest unknown: manifest unknown.
+  See 'docker run --help'.
+
+Work dir:
+  /home/diego/Dropbox/curso_nextflow/work/8a/a5df550fdc8f4f5db4e067a04b9bd5
+
+Tip: you can try to figure out what's wrong by changing to the process work dir and showing the script file named `.command.sh`
+jun.-01 14:06:22.463 [Task monitor] DEBUG nextflow.Session - Session aborted -- Cause: Process `FASTQC (FASTQC on lung)` terminated with an error exit status (125)
+jun.-01 14:06:22.521 [Task monitor] DEBUG nextflow.Session - The following nodes are still active:
+[process] MULTIQC
+  status=ACTIVE
+  port 0: (value) OPEN  ; channel: *
+  port 1: (cntrl) -     ; channel: $
+
+jun.-01 14:06:22.524 [main] DEBUG nextflow.Session - Session await > all processes finished
+jun.-01 14:06:22.525 [main] DEBUG nextflow.Session - Session await > all barriers passed
+jun.-01 14:06:22.539 [main] WARN  n.processor.TaskPollingMonitor - Killing running tasks (4)
+jun.-01 14:06:22.560 [main] DEBUG n.executor.local.LocalTaskHandler - Unable to kill FASTQC (FASTQC on liver) -- command: kill -TERM 129093; exit: 1 
+ bash: line 1: kill: (129093) - No such process
+
+jun.-01 14:06:22.589 [main] DEBUG n.executor.local.LocalTaskHandler - Unable to kill FASTQC (FASTQC on gut) -- command: kill -TERM 129098; exit: 1 
+ bash: line 1: kill: (129098) - No such process
+
+jun.-01 14:06:22.760 [main] DEBUG nextflow.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=1; failedCount=1; ignoredCount=0; cachedCount=0; pendingCount=1; submittedCount=1; runningCount=-1; retriesCount=0; abortedCount=4; succeedDuration=1.4s; failedDuration=2.1s; cachedDuration=0ms;loadCpus=-1; loadMemory=0; peakRunning=4; peakCpus=4; peakMemory=0; ]
+jun.-01 14:06:22.797 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+jun.-01 14:06:22.932 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

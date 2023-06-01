@@ -1,0 +1,80 @@
+jun.-01 14:09:03.403 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf
+jun.-01 14:09:03.616 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.04.1
+jun.-01 14:09:03.665 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/diego/.nextflow/plugins; core-plugins: nf-amazon@1.16.2,nf-azure@1.0.1,nf-codecommit@0.1.4,nf-console@1.0.5,nf-ga4gh@1.0.5,nf-google@1.7.3,nf-tower@1.5.12,nf-wave@0.8.2
+jun.-01 14:09:03.691 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+jun.-01 14:09:03.693 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+jun.-01 14:09:03.702 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+jun.-01 14:09:03.726 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+jun.-01 14:09:03.774 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /home/diego/Dropbox/curso_nextflow/nextflow.config
+jun.-01 14:09:03.778 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/diego/Dropbox/curso_nextflow/nextflow.config
+jun.-01 14:09:03.831 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+jun.-01 14:09:05.042 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
+jun.-01 14:09:05.076 [main] INFO  nextflow.cli.CmdRun - Launching `main.nf` [happy_plateau] DSL2 - revision: 5df810db52
+jun.-01 14:09:05.078 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+jun.-01 14:09:05.078 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+jun.-01 14:09:05.104 [main] DEBUG nextflow.secret.LocalSecretsProvider - Secrets store: /home/diego/.nextflow/secrets/store.json
+jun.-01 14:09:05.116 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@6342d610] - activable => nextflow.secret.LocalSecretsProvider@6342d610
+jun.-01 14:09:05.261 [main] DEBUG nextflow.Session - Session UUID: 9a338861-6362-42f8-bdca-e985c014b124
+jun.-01 14:09:05.261 [main] DEBUG nextflow.Session - Run name: happy_plateau
+jun.-01 14:09:05.264 [main] DEBUG nextflow.Session - Executor pool size: 4
+jun.-01 14:09:05.307 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=12; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+jun.-01 14:09:05.378 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 23.04.1 build 5866
+  Created: 15-04-2023 06:51 UTC (03:51 BRST)
+  System: Linux 5.19.0-42-generic
+  Runtime: Groovy 3.0.16 on OpenJDK 64-Bit Server VM 19.0.2+7-Ubuntu-0ubuntu322.04
+  Encoding: UTF-8 (UTF-8)
+  Process: 131113@diego [127.0.1.1]
+  CPUs: 4 - Mem: 7.7 GB (480.3 MB) - Swap: 2 GB (1.6 GB)
+jun.-01 14:09:05.435 [main] DEBUG nextflow.Session - Work-dir: /home/diego/Dropbox/curso_nextflow/work [ext2/ext3]
+jun.-01 14:09:05.436 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/diego/Dropbox/curso_nextflow/bin
+jun.-01 14:09:05.460 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+jun.-01 14:09:05.492 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+jun.-01 14:09:05.547 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+jun.-01 14:09:05.571 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 5; maxThreads: 1000
+jun.-01 14:09:05.713 [main] DEBUG nextflow.Session - Session start
+jun.-01 14:09:06.834 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+jun.-01 14:09:06.881 [main] INFO  nextflow.Nextflow - R N A S E Q - N F  P I P E L I N E
+==================================
+transcriptome: /home/diego/Dropbox/curso_nextflow/data/ggal/transcriptome.fa
+reads: /home/diego/Dropbox/curso_nextflow/data/ggal/*_{1,2}.fq
+outdir: results
+
+jun.-01 14:09:07.158 [main] DEBUG nextflow.Session - Session aborted -- Cause: Missing process or function INDEX()
+jun.-01 14:09:07.198 [main] ERROR nextflow.cli.Launcher - @unknown
+nextflow.exception.MissingProcessException: Missing process or function INDEX()
+	at nextflow.script.WorkflowDef.run(WorkflowDef.groovy:191)
+	at nextflow.script.BindableDef.invoke_a(BindableDef.groovy:51)
+	at nextflow.script.ChainableDef$invoke_a.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+	at nextflow.script.BaseScript.run0(BaseScript.groovy:183)
+	at nextflow.script.BaseScript.run(BaseScript.groovy:192)
+	at nextflow.script.ScriptParser.runScript(ScriptParser.groovy:229)
+	at nextflow.script.ScriptRunner.run(ScriptRunner.groovy:224)
+	at nextflow.script.ScriptRunner.execute(ScriptRunner.groovy:130)
+	at nextflow.cli.CmdRun.run(CmdRun.groovy:368)
+	at nextflow.cli.Launcher.run(Launcher.groovy:494)
+	at nextflow.cli.Launcher.main(Launcher.groovy:653)
+Caused by: groovy.lang.MissingMethodException: No signature of method: nextflow.script.WorkflowBinding.INDEX() is applicable for argument types: () values: []
+Possible solutions: init(), any(), find(), grep(), sleep(long), find(groovy.lang.Closure)
+	at nextflow.script.WorkflowBinding.invokeMethod(WorkflowBinding.groovy:110)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeOnDelegationObjects(ClosureMetaClass.java:408)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:350)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.callCurrent(PogoMetaClassSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:51)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at Script_d1e61234$_runScript_closure5$_closure14.doCall(Script_d1e61234:98)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:274)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035)
+	at groovy.lang.Closure.call(Closure.java:412)
+	at groovy.lang.Closure.call(Closure.java:406)
+	at nextflow.script.WorkflowDef.run0(WorkflowDef.groovy:204)
+	at nextflow.script.WorkflowDef.run(WorkflowDef.groovy:188)
+	... 13 common frames omitted

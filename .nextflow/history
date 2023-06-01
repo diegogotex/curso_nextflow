@@ -11,3 +11,10 @@
 2023-06-01 10:48:38	23.2s	jolly_brenner	OK	394bdcb54eb5d139b4dc7d786689eabc	d65cc243-97e0-4e7d-94a9-12b7ca9dab39	nextflow run main.nf
 2023-06-01 11:26:18	25.1s	lethal_neumann	OK	394bdcb54eb5d139b4dc7d786689eabc	fb1bbad1-3b21-4620-abb9-2d1916caac62	nextflow run main.nf
 2023-06-01 11:29:33	26.2s	festering_wiles	OK	394bdcb54eb5d139b4dc7d786689eabc	95263f2c-ee5a-4866-8b10-48a1d62bc0d6	nextflow run main.nf
+2023-06-01 13:16:40	23.3s	cheesy_nobel	OK	394bdcb54eb5d139b4dc7d786689eabc	ae30703f-fb6e-4f35-8ff7-f2890ba4bf7a	nextflow run main.nf
+2023-06-01 13:48:10	5.8s	grave_laplace	ERR	394bdcb54eb5d139b4dc7d786689eabc	de88a45f-e97a-4a56-882e-b0f144773891	nextflow run main.nf
+2023-06-01 14:06:17	5.8s	mad_aryabhata	ERR	394bdcb54eb5d139b4dc7d786689eabc	12085ab2-754c-426b-9290-edd6867dd5b1	nextflow run main.nf
+2023-06-01 14:06:54	6.4s	special_hypatia	ERR	394bdcb54eb5d139b4dc7d786689eabc	711b8bfa-cc46-4ff6-86ca-0be50efda182	nextflow run main.nf
+2023-06-01 14:09:05	-	happy_plateau	-	5df810db52ca42e784644a328fca0819	9a338861-6362-42f8-bdca-e985c014b124	nextflow run main.nf
+2023-06-01 14:09:40	5.9s	intergalactic_wilson	ERR	32d5d42eb9f61ad7924c5daa25894efb	282f2b48-73f7-4ee2-8d54-b930627afcd7	nextflow run main.nf
+2023-06-01 14:11:08	22.9s	gigantic_poincare	OK	394bdcb54eb5d139b4dc7d786689eabc	77ee0985-c951-4f84-9ada-d327c419587e	nextflow run main.nf
